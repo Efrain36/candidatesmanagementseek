@@ -25,8 +25,10 @@ public class SwaggerConfig {
                                 .scheme("bearer")
                                 .bearerFormat("JWT")
                                 .in(SecurityScheme.In.HEADER)
-                                .name("Authorization")))
-                .addSecurityItem(new SecurityRequirement().addList("JWT"));
+                                .name("Authorization"))
+                        .addSecuritySchemes("basicScheme",new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("basic")))
+                .addSecurityItem(new SecurityRequirement().addList("JWT"))
+                ;
     }
 
     @Bean
