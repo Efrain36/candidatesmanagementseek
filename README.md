@@ -67,6 +67,6 @@ This will compile the application, run the tests, and start the Spring Boot appl
 
 ### Notes
 
-- **Postman**: Check the project's root for Postman collection file.
+- **Postman**: Check the project's root for Postman collection file and environment variables for local and prod testing.
 
 
